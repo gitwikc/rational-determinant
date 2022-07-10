@@ -442,8 +442,7 @@ Rational **getSquareMatrix(int dim)
     for (int i = 0; i < dim; i++)
         mat[i] = (Rational *)malloc(dim * sizeof(Rational));
 
-    for (int i = 0; i < dim; i++)
-    {
+    for (int i = 0; i < dim; i++) {
         for (int j = 0; j < dim; j++)
         {
             printf("mat[%d][%d]:", i, j);
@@ -457,8 +456,7 @@ Rational **getSquareMatrix(int dim)
     return mat;
 }
 
-void printMatrix(int dim, Rational **mat)
-{
+void printMatrix(int dim, Rational **mat) {
     printf("[\n");
     for (int i = 0; i < dim; i++)
     {
@@ -474,8 +472,7 @@ void printMatrix(int dim, Rational **mat)
 }
 
 // =============== MAIN ==================
-int main()
-{
+int main() {
 
     printf("Welcome to inverse calculator!!!\n\n");
     printf("Matrix dimension = ");
