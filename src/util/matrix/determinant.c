@@ -3,7 +3,7 @@
 #include "./util/rational/ratArithmetic.c"
 #include "./operations.c"
 
-Rational determinant(Rational **matrix, int dim)
+Rational getDeterminant(Rational **matrix, int dim)
 {
     if (dim == 1)
         return matrix[0][0];
@@ -13,7 +13,7 @@ Rational determinant(Rational **matrix, int dim)
     {
         Rational multSign = {{(i % 2 == 0 ? 1 : -1), "1", 0}, {1, "1", 0}};
         det = multRational(multRational(matrix[0][i],
-                                        determinant(dim - 1, getSubmatrix(dim, matrix, 0, i))),
+                                        getDeterminant(dim - 1, getSubmatrix(dim, matrix, 0, i))),
                            multSign);
     }
 

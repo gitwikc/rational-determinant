@@ -6,19 +6,19 @@
 #include "./util/rational/Rational.c"
 #include "./util/matrix/inverse.c"
 
-int main()
-{
+// int main()
+// {
 
-    printf("Welcome to inverse calculator!!!\n\n");
-    printf("Matrix dimension = ");
-    int dim;
-    scanf("%d", &dim);
-    Rational **matrix = getSquareMatrix(dim);
-    Rational **inverse = getInverse(matrix, dim);
-    puts("You entered:\n");
-    printMatrix(matrix, dim);
-    puts("\n\nInverse is:\n");
-    printMatrix(inverse, dim);
+//     printf("Welcome to inverse calculator!!!\n\n");
+//     printf("Matrix dimension = ");
+//     int dim;
+//     scanf("%d", &dim);
+//     Rational **matrix = getSquareMatrix(dim);
+//     Rational **inverse = getInverse(matrix, dim);
+//     puts("You entered:\n");
+//     printMatrix(matrix, dim);
+//     puts("\n\nInverse is:\n");
+//     printMatrix(inverse, dim);
 
-    return 0;
-}
+//     return 0;
+// }
